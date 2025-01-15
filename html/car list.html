@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .vehicle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .vehicle-card {
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #e2cfcf;
+            box-shadow: 10 1 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .vehicle-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .vehicle-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .availability {
+            margin-bottom: 10px;
+            color: #008000;
+            font-weight: bold;
+        }
+        .reservation-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .reservation-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Available Vehicles for Reservation</h1>
+
+    <div class="vehicle-container">
+        <div class="vehicle-card">
+            <img src="car1.jpg" alt="Car Model 1">
+            <div class="vehicle-title">Jeep</div>
+            <div class="availability">Available</div>
+            <button class="reservation-button">Reserve Now</button>
+        </div>
+
+        <div class="vehicle-card">
+            <img src="car2.jpg" alt="Car Model 2">
+            <div class="vehicle-title">Thar</div>
+            <div class="availability">Available</div>
+            <button class="reservation-button">Reserve Now</button>
+        </div>
+
+        <!-- Add more vehicle cards as needed -->
+    </div>
+
+</body>
+</html>
